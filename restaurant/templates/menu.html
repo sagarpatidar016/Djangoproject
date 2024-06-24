@@ -1,0 +1,221 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<style>
+.menu-banner{
+    background: url("https://preview.colorlib.com/theme/rooftop/img/banner-bg.png.webp")no-repeat center;
+    width: 100%;
+    height: 90vh;
+}
+.menu-banner-content{
+    text-align: center;
+    color: #fff;
+    padding-top: 200px;
+}
+.menu-banner-content h1{
+    color: #fff;
+    font-size: 72px;
+    text-transform: uppercase;
+    letter-spacing: 10.8px;
+    font-family: auto;
+    font-size: 80px;
+}
+.menu-banner-content hr{
+    border-color: rgba(255, 255, 255, 0.4);
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.menu-banner-content p{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 8px;
+}
+.menu-container1{
+    display: flex;
+    margin-top: 0%;
+    
+    
+}
+.menu-container1-img img{
+    padding-left: 25%;
+    margin-top: 0%;
+
+}
+.menu-container1-content{
+    margin-top: 25%;
+    margin-left: 10%;
+    width: 40%;
+    padding-right: 85px;
+
+}
+.menu-container1-content span{
+    font-family: auto;
+    font-size: 50px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    letter-spacing: 7.2px;
+    text-transform: uppercase;
+}
+    
+
+.menu-container1-content p{
+    font-family: sans-serif;
+    margin-bottom: 50px;
+    line-height: 30px;
+    color: rgb(151, 151, 151);
+}
+.menu-container1-menu{
+    padding: 120px 0px;
+    text-align: center;
+    background: #faf5f0;
+    width: 50%;
+    margin-top: -18px;
+    margin-right: 13%;
+}
+.menu-button {
+    background-color: #ad9966;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    width: 50%;
+    font-size: 20px;
+    font-family: monospace;
+    border: 1px solid #ad9966;
+    letter-spacing: 2px;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+.menu-button:hover{
+    background-color: rgb(218, 186, 98);
+    border-color: black;
+}
+.single-menu {
+    margin-bottom: 65px;
+}
+.single-menu h3 {
+    font-size: 21px;
+    position: relative;
+    padding-bottom: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-family: "Playfair Display", serif;
+}
+.single-menu h3:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 35px;
+    transform: translate(-50%, -50%);
+    height: 1px;
+    width: 120px;
+    background: rgba(0, 0, 0, 0.2);
+}
+.single-menu .list li .menu-item {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #010000;
+}
+.single-menu .list li p {
+    margin: 0;
+}
+.single-menu .list li {
+    padding-bottom: 30px;
+}
+ul {
+    display: contents;
+    justify-content: center;
+}
+</style>
+
+<section class="menu-banner">
+<div class="menu-banner-content">
+    <h1>FOOD MENU</h1>
+    <hr>
+    <p><a href="http://127.0.0.1:8000/" style="color: #fff; text-decoration: none;">HOME → MENU</a></p>
+</div>
+</section>
+<section class="menu-container1">
+    <div class="menu-container1-content">
+        <span>DAILY FOOD
+            COURSES
+            WITH DRINKS</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <button class="menu-button">SEE FULL MENU</button>
+
+    </div>
+    <div class="menu-container1-menu">
+        
+        <div class="single-menu">
+            <h3>
+                Appetizer
+            </h3>
+            <ul class="list">
+                <li>
+                    <p class="menu-item">Ham & Potato Sandwiches ...........
+                    <span>$25.00</span>
+                </p>
+                    <p>(French bread baguette, cooked ham, potato salad)</p>
+                </li>
+
+                <li>
+                    <p class="menu-item">Ham & Potato Sandwiches ...........
+                    <span>$25.00</span>
+                </p>
+                    <p>(French bread baguette, cooked ham, potato salad)</p>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="single-menu">
+            <h3>
+                MAIN COURSES
+            </h3>
+            <ul class="list">
+                <li>
+                    <p class="menu-item">Ham & Potato Sandwiches ...........
+                    <span>$25.00</span>
+                </p>
+                    <p>(French bread baguette, cooked ham, potato salad)</p>
+                </li>
+
+                <li>
+                    <p class="menu-item">Ham & Potato Sandwiches ...........
+                    <span>$25.00</span>
+                </p>
+                    <p>(French bread baguette, cooked ham, potato salad)</p>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="single-menu">
+            <h3>
+                DRINKS & JUICES
+            </h3>
+            <ul class="list">
+                <li>
+                    <p class="menu-item">Ham & Potato Sandwiches ...........
+                    <span>$25.00</span>
+                </p>
+                    <p>(French bread baguette, cooked ham, potato salad)</p>
+                </li>
+
+                <li>
+                    <p class="menu-item">Ham & Potato Sandwiches ...........
+                    <span>$25.00</span>
+                </p>
+                    <p>(French bread baguette, cooked ham, potato salad)</p>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+    
+</section>
+<br>
+<br>
+<br>
+{%endblock%}

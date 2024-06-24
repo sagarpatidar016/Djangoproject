@@ -1,0 +1,147 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<style>
+.contact-banner{
+    background: url("https://preview.colorlib.com/theme/rooftop/img/banner-bg.png.webp")no-repeat center;
+    width: 100%;
+    height: 90vh;
+}
+.contact-banner-content{
+    text-align: center;
+    color: #fff;
+    padding-top: 200px;
+}
+.contact-banner-content h1{
+    color: #fff;
+    font-size: 72px;
+    text-transform: uppercase;
+    letter-spacing: 10.8px;
+    font-family: auto;
+    font-size: 80px;
+}
+.contact-banner-content hr{
+    border-color: rgba(255, 255, 255, 0.4);
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.contact-banner-content p{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 8px;
+}
+.contact-container1{
+    display: flex;
+    margin-top: 7%;
+    margin-right: 12%;
+    
+}
+.contact-container1-img img{
+    padding-left: 25%;
+    margin-top: 10%;
+
+}
+.contact-container1-content{
+    margin-top: 5%;
+    padding-left: 12%;
+
+}
+.contact-container1-content span{
+    font-family: auto;
+    font-size: 50px;
+    line-height: 1.5;
+    letter-spacing: 7.2px;
+    text-transform: uppercase;
+}
+    
+
+.contact-container1-content p{
+    font-family: sans-serif;
+    margin-bottom: 7px;
+    line-height: 30px;
+    color: rgb(151, 151, 151);
+}
+.map{
+    margin-left: 10%;
+
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+
+<section class="contact-banner">
+<div class="contact-banner-content">
+    <h1>CONTACT US</h1>
+    <hr>
+    <p><a href="http://127.0.0.1:8000/" style="color: #fff; text-decoration: none;">HOME → CONTACT</a></p>
+</div>
+</section>
+<section class="contact-container1">
+    <div class="contact-container1-img">
+        <div style="width: 100vh" class="map"><iframe width="100%" height="850" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=okaz%20indore+(Rooftop)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/sport-gps/">fitness tracker</a></iframe></div>
+    </div>
+    <div class="contact-container1-content">
+        <span>FINE DINNING
+            RESTAURANT</span>
+            <p>Geeta Bhawan square 301 Dil Pasand Square</p>
+            <p>164 Kanchan Bagh, Gita Bhawan Rd</p>
+            <p>above Main, South Tukoganj, Indore,</p>
+            <p>Madhya Pradesh 452001</p>
+            <form action="" method="post">
+                {% csrf_token %}
+                <div class="container-form">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" name="name" placeholder="Your name.." required>
+                  
+                      <label for="email">Email</label>
+                      <input type="text" id="email" name="email" placeholder="Enter your email..." required>
+
+                      <label for="phone">Phone</label>
+                      <input type="text" id="phone" name="phone" placeholder="Enter your mobile no...." required>
+
+
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+ 
+                      <input type="submit" value="Submit">
+                  
+                    </form>
+                  </div>
+            </form>
+    </div>
+</section>
+<br>
+<br>
+<br>
+{%endblock%}
